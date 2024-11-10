@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cce53sjufbm27"]
+
+[ext_resource type="Texture2D" uid="uid://bsqm5lpn0jfbm" path="res://TrailDot.png" id="1_gvx7r"]
+[ext_resource type="Script" path="res://Bot.gd" id="2_aa7uh"]
+[ext_resource type="Texture2D" uid="uid://cvkphmrbti0c5" path="res://icon.svg" id="3_h7xq2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Point1" type="Sprite2D" parent="."]
+position = Vector2(73, 475)
+scale = Vector2(0.388393, 0.334821)
+texture = ExtResource("1_gvx7r")
+
+[node name="Point2" type="Sprite2D" parent="."]
+position = Vector2(71, 301)
+scale = Vector2(0.348214, 0.299107)
+texture = ExtResource("1_gvx7r")
+
+[node name="Point3" type="Sprite2D" parent="."]
+position = Vector2(1106, 228)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("1_gvx7r")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(1073, 414)
+script = ExtResource("2_aa7uh")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("3_h7xq2")
